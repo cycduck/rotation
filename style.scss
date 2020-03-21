@@ -6,6 +6,10 @@
   height:100%;
 }
 
+@mixin angle($deg){
+  transform: rotateX($deg);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -47,16 +51,16 @@ body {
   }
 
   &__flap:nth-child(1) {
-    transform: rotateX(0deg);
+    @include angle(0deg);
   }
   &__flap:nth-child(2) {
-    transform: rotateX(45deg);
+    @include angle(45deg);
   }
   &__flap:nth-child(3) {
-    transform: rotateX(-45deg);
+    @include angle(-45deg);
   }
   &__flap:nth-child(4) {
-    transform: rotateX(90deg);
+    @include angle(90deg);
   }
 }
 

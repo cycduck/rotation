@@ -7,8 +7,15 @@
   <title>rolling sheets of toilet paper</title>
 </head>
 <body>
+  <!-- based on this https://www.youtube.com/watch?v=bqL4FqihRQg 
+    Learning objective: To understand more about transform, rotationXY, animations, filter
+    changed using SCSS instead-->
   <div class="box">
+    <!-- the box determines the angle and perspective of the plane  -->
+    <!-- perspective, try turning off transform style, and change the number from 1000 to 100. The higher the number, the more warpped it is -->
     <div class="box__test">
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style, if not 3d all flaps will be flat -->
+      <!-- this div also determins the animation for all the flaps -->
       <span class="box__flap"></span>
       <span class="box__flap"></span>
       <span class="box__flap"></span>
